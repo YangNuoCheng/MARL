@@ -25,17 +25,14 @@ macOS/Linux/Windows (using Anaconda Prompt)
 - ``python main.py``
 
     - Additional customization options
-        - ``--Student_number``, tell us your student number for testing purposes
-        - ``--MARLAlgorithm``, choice in 'IQL', 'VDN' (to be completed) and 'QMIX'
-        - ``--agents-number``, an int number, which represents the number of agents in experiment
-        - For other options, please refer to lines 168-219 in the ``main.py``
+        - ``--MARLAlgorithm``, choice in 'IQL', 'VDN' (to be completed) and 'QMIX',
+        - ``--agents-number``, an int number, which represents the number of agents in experiment,
+        - For other options, please refer to ``main.py``.
     - Example
-        - ``python main.py --agents-number 2 --MARLAlgorithm IQL --Student_number 100``, where you set three agents and train them with IQL algorithm, and your student number is 100 (for example).
-## Step 3, Modify the code ```MARL_agent.py``` and submit everything in a zip/rar file, name it "FirstName_LastName_Project2.zip".
-Test the neural network by ``python main.py --agents-number 2 --MARLAlgorithm IQL --Student_number 100``.
+        - ``python main.py --agents-number 2 --MARLAlgorithm IQL``, where you set two agents and train them with IQL algorithm.
+## Step 3, modify the code and submit everything in a zip/rar file, name it "FirstName_LastName_Project3.zip".
+Test the neural network by ``python main.py --agents-number 2``.
 
-Test the VDN algorithm by ``python main.py --agents-number 2 --MARLAlgorithm VDN --Student_number 100``.
+Test the VDN algorithm by ``python main.py --agents-number 2 --MARLAlgorithm VDN``.
 
-Test the prey strategy by ``python main.py --agents-number 2 --MARLAlgorithm IQL --Student_number 100 -evm 3``.
-
-Test the training strategy by ``python main.py --agents-number 2 --MARLAlgorithm VDN --Student_number 100 ... (--agrs in main.py)``.
+Test the prey strategy by ``python main.py --agents-number 2 -evm 3``.

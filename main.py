@@ -175,7 +175,7 @@ if __name__ =="__main__":
     parser.add_argument('-test', '--test', action='store_true', help='Enable the test phase if "store_false"')
 
     # Game Parameters
-    parser.add_argument('-k', '--agents-number', default=3, type=int, help='The number of agents')
+    parser.add_argument('-k', '--agents-number', default=2, type=int, help='The number of agents')
     parser.add_argument('-g', '--grid-size', default=5, type=int, help='Grid size')
     parser.add_argument('-ts', '--max-timestep', default=100, type=int, help='Maximum number of timesteps per episode')
     parser.add_argument('-gm', '--game-mode', choices=[0, 1], type=int, default=1, help='Mode of the game, '
