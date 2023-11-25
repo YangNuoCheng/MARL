@@ -1,3 +1,4 @@
+## Overview
 This tutorial provides an efficient guide to configuring your Python environment for multi-agent reinforcement learning (MARL) experiment. We recommend [Anaconda](https://www.anaconda.com/) for its robust package management capabilities.
 
 For installing Anaconda on different platforms:
@@ -23,16 +24,15 @@ macOS/Linux/Windows (using Anaconda Prompt)
 
 ## Step 2, run the experiment:
 - ``python main.py``
-
-    - Additional customization options
+    - Additional customization parameters:
         - ``--MARLAlgorithm``, choice in 'IQL', 'VDN' (to be completed) and 'QMIX',
         - ``--agents-number``, an int number, which represents the number of agents in experiment,
-        - For other options, please refer to ``main.py``.
+        - For other parameters, please refer to ``main.py``.
     - Example
-        - ``python main.py --agents-number 2 --MARLAlgorithm IQL``, where you set two agents and train them with IQL algorithm.
+        - ``python main.py --agents-number 3 --MARLAlgorithm IQL``, where you set three agents and train them with IQL algorithm.
 ## Step 3, modify the code and submit everything in a zip/rar file, name it "FirstName_LastName_Project3.zip".
-Test the neural network by ``python main.py --agents-number 2``.
+- Test the neural network by ``python main.py --agents-number 2``.
 
-Test the VDN algorithm by ``python main.py --agents-number 2 --MARLAlgorithm VDN``.
+- Test the VDN algorithm by ``python main.py --agents-number 2 --MARLAlgorithm VDN``.
 
-Test the prey strategy by ``python main.py --agents-number 2 -evm 3``.
+- Test the prey strategy by ``python main.py --agents-number 2 -evm 3``.
