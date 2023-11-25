@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tuesday Sep.  26 2023
+Created on Tuesday Sep. 26 2023
 @author: Nuocheng Yang, MingzheChen
 @github: https://github.com/YangNuoCheng, https://github.com/mzchen0 
-
 """
 import random
 import numpy as np
@@ -48,6 +47,7 @@ class controller(object):
         
         split_vectors = [np.array(y_list)[:, i, :] for i in range(np.array(y_list).shape[1])]
         for i, x_i in enumerate(x):
+            # y_tot = 0 # Code to be changed
             y_tot = np.array(split_vectors[i]).sum(axis = 0)
             y_tot_list.append(y_tot)
                 
