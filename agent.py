@@ -42,15 +42,14 @@ class Brain(object):
         self.test = arguments['test']
         self.num_nodes = arguments['number_nodes']
         self.optimizer_model = arguments['optimizer']
-        self.model = self._build_model()
-        self.model_ = self._build_model()
+        self.model = self.build_model()
+        self.model_ = self.build_model()
 
-    def _build_model(self):
+    def build_model(self):
 
         x = Input(shape=(self.state_size,))
         # a series of fully connected layer for estimating Q(s,a)
-        y1 = Dense(self.num_nodes, activation='relu')(x)
-        z = Dense(self.action_size, activation="linear")(y1)
+        z = Dense(self.action_size, activation="linear")(x)
 
         model = Model(inputs=x, outputs=z)
         
