@@ -45,12 +45,12 @@ class controller(object):
             x, y = agent.find_targets_uer(batch)
             y_list.append(y)
         
-        split_vectors = [np.array(y_list)[:, i, :] for i in range(np.array(y_list).shape[1])]
         for i, x_i in enumerate(x):
-            # y_tot = 0 # Code to be changed
-            y_tot = np.array(split_vectors[i]).sum(axis = 0)
+            # *** Design y_tot ***
+            y_tot = 0 
+            # *** Design y_tot ***
             y_tot_list.append(y_tot)
-                
+            
         y_tot_list = np.array(y_tot_list).reshape(-1, self.action_size)
         for i, agent in enumerate(agents):
             agent.brain.model.fit(x, y_tot_list, batch_size=len(x), sample_weight = None, epochs = 1, verbose = 0)

@@ -1,10 +1,8 @@
 """
-Created on Wednesday Jan  16 2019
-
-@author: Seyed Mohammad Asghari
-@github: https://github.com/s3yyy3d-m
+Created on Tuesday Sep. 26 2023
+@author: Nuocheng Yang, MingzheChen
+@github: https://github.com/YangNuoCheng, https://github.com/mzchen0 
 """
-
 import random
 import operator
 import numpy as np
